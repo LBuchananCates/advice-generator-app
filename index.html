@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="advice-generator.css" />
@@ -30,10 +30,8 @@
   </head>
   <body>
     <div class="advice-container">
-      <h1>Advice #___</h1>
-      <p class="advice">
-        "That rock was sharper than a wild horse shitting in my region."
-      </p>
+      <h1 id="advice-number">Advice #<span id="number"></span></h1>
+      <p class="advice" id="advice">"Advice, advice!"</p>
 
       <div class="divider-div">
         <img
@@ -42,10 +40,9 @@
           alt="pattern-divider"
         />
       </div>
-
-      <div class="dice-div">
-        <img class="dice-img" src="./images/icon-dice.svg" alt="dice-icon" />
-      </div>
+      <button class="dice-btn" id="dice-btn" onclick="fetchAdvice()">
+        <img src="./images/icon-dice.svg" alt="dice-icon" />
+      </button>
     </div>
 
     <div class="attribution">
@@ -54,5 +51,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Leighton Buchanan-Cates</a>.
     </div>
+    <script src="advice-generator.js"></script>
   </body>
 </html>

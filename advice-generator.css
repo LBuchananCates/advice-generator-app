@@ -51,7 +51,11 @@ p {
 .dice-div {
   background-color: hsl(150, 100%, 66%);
   border-radius: 50%;
-  width: 30px;
+  width: 32px;
+}
+
+.dice-div:hover {
+  box-shadow: 5px 6px 4px hsl(150, 100%, 66%);
 }
 
 .dice-img {
