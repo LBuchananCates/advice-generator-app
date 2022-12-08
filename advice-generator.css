@@ -44,22 +44,18 @@ p {
   justify-content: center;
 }
 
-.divider-img {
+button {
   display: flex;
-}
-
-.dice-div {
+  flex-direction: column;
+  align-items: center;
   background-color: hsl(150, 100%, 66%);
   border-radius: 50%;
-  width: 32px;
+  border: none;
+  cursor: pointer;
+  height: 35px;
+  justify-content: center;
 }
 
-.dice-div:hover {
-  box-shadow: 5px 6px 4px hsl(150, 100%, 66%);
-}
-
-.dice-img {
-  display: block;
-  width: 32px;
-  padding: 5px;
+button:hover {
+  box-shadow: hsl(150, 100%, 66%);
 }
